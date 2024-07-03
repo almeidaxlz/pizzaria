@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ece8a7; /* Light gray background */
+    text-align: center; /* centralizar o conteudo*/
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for container */
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #343a40; /* Dark gray text color */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    border-bottom: 2px solid #007bff; /* Blue bottom border */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.pizza-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pizza-description {
+    flex: 1;
+    color: #495057; /* Dark gray text color */
+}
+
+.pizza-image {
+    width: 85px;
+    height: 85px;
+    border-radius: 4px;
+    object-fit: cover; /* Ensures the image covers its entire area */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+@media (max-width: 600px) {
+    .pizza-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .pizza-image {
+        margin-top: 10px;
+    }
+}
